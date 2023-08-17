@@ -1,38 +1,169 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Jost&family=Lato&family=Montserrat:wght@400;700&family=Oleo+Script&family=Open+Sans:wght@600&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,400&display=swap');
+
+#detail-title{
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 600 !important;
+  margin: 1rem;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px silver solid;
+  background-color: white;
+  width: fit-content;
+  height: 45px;
+  border-radius: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-box>.MuiSvgIcon-root {
+  color: gray;
+  padding: 10px;
+  font-size: 45px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-box>input {
+  border: none;
+  outline-width: 0;
+  padding: 3px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-box>input:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.Search-bar {
+  display: flex;
+  margin-top: 50px;
+  margin: 1rem;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.Table {
+  border-radius: 15px;
+  margin-top: 30px;
+  border: 1px silver solid;
+  margin: '10px 10px';
+  max-width: 950
+}
+.patient-information{
+  margin-left:1rem;
+  margin-right:1rem;
+  padding:1rem;
+  border:1px solid silver
+}
+#Patient-Information{
+  font-family: 'Poppins', sans-serif;
+font-size:20px;
+color:#1d86c6;
+  
+font-weight:700 !important;
+}
+.information{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+padding:1rem;
+
+grid-gap:1rem;
+grid-template-rows: auto;
+ 
+}
+    
+#table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#Signin>p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 600 !important;
+  letter-spacing: 3px;
+  /* margin: 1rem; */
+}
+
+#outlined-basic:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+#outlined-adornment-password:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.page-right-side {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Signin {
+  width: 30rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  gap: 1rem;
+  align-items: center;
+  border: 1px solid silver !important;
+  border-radius: 20px;
+  padding: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.Login-btn {
+  margin: 20rem;
+}
+thead {
+  background-color: #66c9a3;
+  color:white;
+  font-size: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+}
+
+
+tbody tr {
+  border-bottom: 1px solid #E3F1D5;
+  background-color: #FFFFFF;
+}
+#info-t{
+   font-size:16px;
+color:#1d86c6;
+     font-family: 'Poppins', sans-serif;
+font-weight:600 !important;
+}
+.information>div>p{
+          font-family: 'Poppins', sans-serif;
+font-weight:400 !important;
+}
+
+.Table-header {
+  color: white !important;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600 !important;
+  background-color:#2EB62C !important;
 }
