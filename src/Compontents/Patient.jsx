@@ -104,7 +104,7 @@ function Patient() {
           </div>
           <div>
             <p id='info-t'>
-            Emergency contact
+            Phone
             </p>
             <p>{e?.PatientDetails?.Phone}</p>
           </div>
@@ -134,7 +134,7 @@ function Patient() {
           </div>
           <div>
             <p id='info-t'>
-            Phone
+            Phone no
             </p>
             <p>{e?.PatientDetails?.Phone_no}</p>
           </div>
@@ -142,7 +142,7 @@ function Patient() {
         <div>
                 </div>
                 <p id='Patient-Information'>
-          Diagonsis
+          Diagnosis
         </p>
         <table id='table'>
         <thead>
