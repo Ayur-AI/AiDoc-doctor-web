@@ -98,14 +98,14 @@ function Dashboard() {
                         <TableBody>
 
                             {data.users
-                                // .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).filter((s) => {
-                                //     if (Search === "") {
-                                //         return s;
-                                //     }
-                                //     else if (s.Data.patient_name.toLowerCase().includes(Search.toLowerCase())||s.Data.doctor_name.toLowerCase().includes(Search.toLowerCase())) {
-                                //         return s;
-                                //     }
-                                // })
+                                .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).filter((s) => {
+                                    if (Search === "") {
+                                        return s;
+                                    }
+                                    else if (s.PatientDetails.Name.toLowerCase().includes(Search.toLowerCase())) {
+                                        return s;
+                                    }
+                                })
                                 .map((row) => {
                                     return (
                                         <TableRow hover role="checkbox" tabIndex={-1} key={row._id}>
