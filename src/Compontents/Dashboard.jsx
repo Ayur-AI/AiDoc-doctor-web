@@ -140,7 +140,7 @@ function Dashboard() {
 
                             rowsPerPageOptions={[10, 25, 100]}
                             component="div"
-                            count={data.users}
+                            count={data.users.length}
 
                             rowsPerPage={rowsPerPage}
                             page={page}
